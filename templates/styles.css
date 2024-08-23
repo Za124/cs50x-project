@@ -1,0 +1,102 @@
+
+}
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+
+main table
+{
+    /* left-align contents */
+    text-align: left;
+}
+
+main tfoot
+{
+    /* boldface tables' footers */
+    font-weight: bold;
+}
+th, td th {
+padding: 16px;
+font-size: 18pt;
+}  
+
+table, th, td {
+  
+ 
+  font-size: 11pt;
+border: 3px solid white;
+color: white;
+  
+}
+.submit {
+
+    text-align: center;
+
+    width: 100%;
+    margin: 10px auto 0 auto;
+
+}
+
+.submit button {
+    position: relative;
+	margin: 10px auto;
+    width: 90%;
+    font-size: 119%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    background:black;
+    font-weight: bod;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0,0,0,0.22);
+  border: 3px dashed #ffbe40;
+}
+submit button:hover  {
+    background: #B40404;
+}

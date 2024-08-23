@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+  <style >
+table, th, td {
+ background-color: #fff;
+  color: rgba(43,46,49,0.951) ; 
+margin-left: -45px;
+  font-size: 9.5pt;
+border-radius: 20px;
+border: 2px solid ;
+  
+}  
+
+@media screen and (min-width: 480px) {
+ table, td {
+font-size:17pt;
+margin-left: -90px;
+  padding: 30px;
+ }
+  
+  }
+@media screen and (min-width: 480px){
+ th{
+   width:  303%;
+  font-size: 50px;
+   margin-left: -15px;
+   
+ }
+  
+  }  
+</style>  
+    <table class="table table-triped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for t in transactions %}
+                <tr>
+                    <td>{{ t.symbol }}</td>
+                    <td>{{ t.shares }}</td>
+                    <td>{{ t.price | usd }}</td>
+                    <td>{{ t.transacted }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

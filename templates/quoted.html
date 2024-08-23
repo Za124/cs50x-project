@@ -1,0 +1,64 @@
+
+	{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+<style>
+ .za {
+ background-color: #fff;
+  color:   ; 
+margin-left: -35px;
+  font-size: 15pt;
+border-radius: 20px;
+border: 2px solid ;
+width: 270px;
+}
+@media screen and (min-width: 480px) {
+ .za {
+font-size:29pt;
+ width: 100%;
+ margin-left: 10px;
+  padding: 30px;
+ }
+  
+  }
+h3{
+  width: 250px;
+  border-radius: 10px;
+border: 2px solid black ;
+margin-left: 10px;
+}
+@media screen and (min-width: 480px){
+  h3 {
+   width: 100%;
+   margin-top: 25px;
+   
+ height: 40px;  
+ }
+  
+  }
+h1{
+margin-left:70px ;
+}
+@media screen and (min-width: 480px){
+  h1{
+   
+   margin-left:40%;
+   
+   
+ }
+  
+  }
+
+
+</style>
+<div class="za">
+<h1>Quoted</h1>
+<h3>name: {{name}}</h3>
+<h3>price: {{price}}</h3>
+<h3>symbol: {{symbol}}</h3>
+</div>     
+{% endblock %}

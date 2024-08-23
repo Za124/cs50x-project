@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quete
+{% endblock %}
+
+{% block main %}
+    {% if query %}
+        <p>
+            A share of {{ query.name}} ({{ query.symbol }}) costs {{ query.price | usd }}
+        </p>
+    {% else %}
+    <style> 
+    .rm {
+
+    text-align: center;
+
+    width: 100%;
+    margin: 30px auto 0 auto;
+
+}
+form {
+
+ width: 120%; 
+ height: 120%;
+  background-color: ;
+  padding: 20px;
+  border-radius: 20px;
+  margin: -40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.zay {
+    position: relative;
+	margin: 20px auto;
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    background:#fff;
+    font-weight: bod;
+    color:  black;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0,0,0,0.22);
+  border: 3px dashed #fff;
+font-family: "Lucida Console", "Courier New", monospace;
+  font-size:18px;
+}
+.zay:hover  {
+    background: #B40404;
+}
+button,.zay{
+  margin-left: 30px;
+}
+.form-control {
+  
+margin-top: 10px;
+width: 120%; 
+  }
+  @media screen and (min-width: 480px) {
+ .form-control {
+margin-left: -20px;
+width: 100%;
+  padding: 20px;
+ }
+  }
+</style>
+        <form action="/quote", method="post">
+            <div class="form">
+                <input autocomplete="off" autofocus required class="form-control" name="symbol" placeholder="Symbol" type="text">
+            </div>
+            <button class="zay" type="submit">Quote</button>
+        </form>
+    {% endif %}
+{% endblock %}
