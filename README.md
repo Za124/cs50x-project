@@ -56,5 +56,5 @@ Introduction to the intellectual enterprises of computer science and the art of 
 
 Thank you for all CS50.
 
-Where I get CS50 course? https://cs50.harvard.edu/x/2023/
+Please note that this repository is for storing my projects and files from Harvard University's CS50x course. It is not meant for sharing answers or encouraging academic dishonesty. If you are currently enrolled, please complete the assignments independently and refer to the course materials
 	
